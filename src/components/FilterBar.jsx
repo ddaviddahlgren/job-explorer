@@ -13,15 +13,15 @@ export default function FilterBar({ blok, searchParams }) {
       <form method="get" className="flex gap-2 items-center">
         <select name="department" defaultValue={currentDepartment}>
           <option value="">All departments</option>
-          <option value="hr-rep">Human Rezourcez</option>
-          <option value="ux-designer">UX-Designer</option>
-          <option value="fontend-developer">Frontend developer</option>
+          <option value="hr">Human Rezourcez</option>
+          <option value="ux">UX</option>
+          <option value="developement">Development</option>
         </select>
         <input type="hidden" name="q" value={currentQuery} />
         <button type="submit">Filter jobs</button>
       </form>
 
-      <form method="get" className="flex gap-2 items-center">
+      <form method="get" className="flex gap-2 items-center border-1">
         <input
           type="text"
           name="q"
